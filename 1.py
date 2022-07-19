@@ -39,7 +39,7 @@ def main() -> None: # This is main
     for item_index, item in enumerate(sorted(iq_dict.items(), key=lambda x: x[1], reverse=True)):
         print(F"Самый умный (iq:{item[1]})", item[0]) if item_index == 0 else None
         print(F"Обычный (iq:{item[1]})", item[0]) if item_index >= 1 and item_index <= 3 else None
-        print(F"Совсем тупой (iq:{item[1]})", item[0]) if item_index > 3 else None
+        print(F"Не очень умный (iq:{item[1]})", item[0]) if item_index > 3 else None
     
     return None
     # end of main
